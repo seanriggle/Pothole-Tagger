@@ -6,11 +6,15 @@ angular.module('App', [])
 
     $routeProvider
     .when('/', {
-        controller: TestCtrl,
-        templateUrl: 'partials/main.html'
+        controller: TagCtrl,
+        templateUrl: 'partials/tag.html'
     })
-    .when('/view', {
-        controller: ViewCtrl,
-        templateUrl: 'partials/view.html'
+    .when('/history', {
+        controller: HistoryCtrl,
+        templateUrl: 'partials/history.html'
+    })
+    .when('/account', {
+        controller: AccountCtrl,
+        templateUrl: 'partials/account.html'
     });
 });
