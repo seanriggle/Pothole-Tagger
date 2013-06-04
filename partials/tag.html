@@ -1,5 +1,8 @@
 <p> Tag View: {{ status }} </p>
 <div>
-    <a class="btn btn-primary" href="#"><i class="icon-camera icon-white"></i></a>
+    <div class="row">
+        <img ng-src="{{imgSource}}" class="img-polaroid">
+    </div>
+    <a class="btn btn-primary" href="#" ng-click="takePicture()"><i class="icon-camera icon-white"></i></a>
     <a class="btn btn-success" href="#"><i class="icon-tag icon-white"></i></a>
 </div>
