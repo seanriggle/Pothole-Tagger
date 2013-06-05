@@ -6,17 +6,19 @@
     <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/potholelocator.css" />
+    
     <title>Pothole Tagger</title>
     
 </head>
     <body>
         <script type="text/javascript" src="lib/jquery.js"></script>
         <script type="text/javascript" src="lib/bootstrap.min.js"></script>
-<!--        <div class="container">-->
-            <div ng-view></div>
+        <div class="container fill">
+            <div ng-view class="container-view-loader"></div>
             
-            <div class="navbar navbad-fixed-bottom">
-            <div class="navbar-inner">
+            <div class="navbar">
+            <div class="navbar-inner pull-center">
         <!--
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                   <span class="icon-bar"></span>
@@ -25,13 +27,13 @@
                 </a>
         -->
                   <ul class="nav">
-                    <li><a href="#/history">History</a></li>
-                    <li><a href="#/">Tag</a></li>
-                    <li><a href="#/account">Account</a></li>
+                    <li class="span3"><a href="#/history">History</a></li>
+                    <li class="span3"><a href="#/">Tag</a></li>
+                    <li class="span3"><a href="#/account">Account</a></li>
                   </ul>
             </div><!-- /navbar-inner -->
           </div>
-<!--        </div>-->
+        </div>
 
     
     

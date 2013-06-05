@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+}
+
+.pothole_img {
+    
+}
+
+.fill {
+    height: 100%;
+}
+
+.pull-center {
+        text-align: center;
+}
+.pull-center > .nav {
+    float:none;
+    display:inline-block;
+    *display: inline; *zoom: 1;
+    /*height: 32px; */
+}
+
+.container-view-loader {
+    height: 100%;
+}

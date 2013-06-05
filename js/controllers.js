@@ -1,9 +1,9 @@
 function TagCtrl($scope) {
     $scope.status = "Tag a pothole!";
-    
+    $scope.isCameraReady = false;
     $scope.imgSource = "img/pothole_large.png"; // source for img tag to display picture
-    $scope.pictureSource;   // picture source
-    $scope.destinationType; // sets the format of returned value 
+    //$scope.pictureSource = Camera.PictureSourceType.CAMERA;   // picture source
+    //$scope.destinationType = Camera.DestinationType.FILE_URI; // sets the format of returned value 
 
     // Wait for Cordova to connect with the device
     //
@@ -12,9 +12,24 @@ function TagCtrl($scope) {
     // Cordova is ready to be used!
     //
     function onDeviceReady() {
-        pictureSource= Camera.PictureSourceType.CAMERA;
-        destinationType= Camera.DestinationType.FILE_URI;
         alert("onDeviceReady");
+        //$scope.isCameraReady = true;
+    }
+    
+    $scope.tagPicture = function(){
+        navigator.geolocation.getCurrentPosition($scope.onGeoSuccess, $scope.onGeoError);   
+    }
+        
+    $scope.onGeoSuccess = function(position){
+        $scope.lat = position.coords.latitude;
+        $scope.lon = position.coords.longitude;
+        alert("Postion = " + $scope.lat + "," + $scope.lon);
+    }
+        
+    $scope.onGeoError = function(){
+        if(error == 1){
+            alert("Turn on location services to tag photo using GPS");
+        }
     }
     
     $scope.takePicture = function(){
@@ -32,7 +47,7 @@ function TagCtrl($scope) {
     
     $scope.onError = function(message) {
         alert(message);
-    }        
+    }
 }
 
 function HistoryCtrl($scope) {

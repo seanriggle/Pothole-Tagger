@@ -1,8 +1,18 @@
-<p> Tag View: {{ status }} </p>
-<div>
-    <div class="row">
-        <img ng-src="{{imgSource}}" class="img-polaroid">
+<div class="fill">
+    <h2>Tag a Pothole</h2>
+    <div class="row-fluid">
+        <div class="span2 offset5">
+            <img ng-src="{{imgSource}}">
+        </div>
     </div>
-    <a class="btn btn-primary" href="#" ng-click="takePicture()"><i class="icon-camera icon-white"></i></a>
-    <a class="btn btn-success" href="#"><i class="icon-tag icon-white"></i></a>
+    
+    <div class="row-fluid">
+        <div class="span1 offset5">
+            <button class="btn-large btn-primary btnTakePicture" href="#" ng-click="takePicture()" ng-disabled="{{isCameraReady}}"><i class="icon-camera icon-white"></i></button>
+        </div>
+        <div class="span1">
+            <button class="btn-large btn-success" href="#" ng-click="tagPicture()"><i class="icon-tag icon-white"></i></button>
+        </div>
+    </div>
 </div>
+
