@@ -23,3 +23,15 @@ html, body {
 .container-view-loader {
     height: 100%;
 }
+
+.fill-width {
+    width: 100%;
+}
+
+.fill-half-width {
+    width: 50%;
+}
+
+.spacer {
+    margin-top: 10px; /* define margin as you see fit */
+}
