@@ -2,6 +2,7 @@ function TagCtrl($scope) {
     $scope.status = "Tag a pothole!";
     $scope.isCameraReady = false;
     $scope.imgSource = "img/pothole_large.png"; // source for img tag to display picture
+    $scope.location="Not Tagged";
     //$scope.pictureSource = Camera.PictureSourceType.CAMERA;   // picture source
     //$scope.destinationType = Camera.DestinationType.FILE_URI; // sets the format of returned value 
 
@@ -23,7 +24,7 @@ function TagCtrl($scope) {
     $scope.onGeoSuccess = function(position){
         $scope.lat = position.coords.latitude;
         $scope.lon = position.coords.longitude;
-        alert("Postion = " + $scope.lat + "," + $scope.lon);
+        $scope.location = $scope.lat + "," + $scope.lon;
     }
         
     $scope.onGeoError = function(){

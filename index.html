@@ -14,26 +14,20 @@
     <body>
         <script type="text/javascript" src="lib/jquery.js"></script>
         <script type="text/javascript" src="lib/bootstrap.min.js"></script>
-        <div class="container fill">
-            <div ng-view class="container-view-loader"></div>
+        <div class="container fill-height">
+            <div ng-view></div>
             
-            <div class="navbar">
-            <div class="navbar-inner pull-center">
-        <!--
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </a>
-        -->
-                  <ul class="nav">
-                    <li class="span3"><a href="#/history">History</a></li>
-                    <li class="span3"><a href="#/">Tag</a></li>
-                    <li class="span3"><a href="#/account">Account</a></li>
+            <div class="navbar navbar-fixed-bottom">
+            <div class="navbar-inner">
+                <ul class="nav row-fluid">
+                    <li class="span4"><a href="#/history"><i class="icon-list icon-white"></i> History</a></li>
+                    <li class="span4"><a href="#/"><i class="icon-road icon-white"></i> Tag</a></li>
+                    <li class="span4"><a href="#/account"><i class="icon-user icon-white"></i> Account</a></li>
                   </ul>
-            </div><!-- /navbar-inner -->
-          </div>
+            </div>
+            </div>
         </div>
+       
 
     
     

@@ -20,7 +20,7 @@ html, body {
     /*height: 32px; */
 }
 
-.container-view-loader {
+.fill-height {
     height: 100%;
 }
 
@@ -35,3 +35,14 @@ html, body {
 .spacer {
     margin-top: 10px; /* define margin as you see fit */
 }
+
+img {
+   height:80%;
+    width:50%;
+}
+
+.align-bottom{
+    display: table-cell;
+    vertical-align: bottom;
+    float: none;
+}    
