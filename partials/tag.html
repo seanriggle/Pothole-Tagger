@@ -1,19 +1,18 @@
-<div class="fill" style="padding-bottom:50px;">
-    <h2>Tag a Pothole</h2>
+<div style="padding-top:10px; padding-bottom:50px">
     <div class="row-fluid">
-       <div class="span12 pagination-centered">
+       <div class="pagination-centered">
            <img class="img-rounded" ng-src="{{imgSource}}" />
         </div>
-        <div class="span12 pagination-centered">
+        <div class="pagination-centered">
             <h4>Location (lat,long): {{location}}</h4>
         </div>
     </div>
     <div class="row-fluid spacer">
-        <div class="span2 offset4">
-            <button class="fill-width btn-large btn-success btnTakePicture" href="#" ng-click="takePicture()" ng-disabled="{{isCameraReady}}"><i class="icon-camera icon-white"></i></button>
+        <div>    
+            <button class="fill-width btn-large btn-success btn-tag btnTakePicture" href="#" ng-click="takePicture()" ng-disabled="{{isCameraReady}}"><i class="icon-camera icon-white"></i></button>
         </div>
-        <div class="span2">
-            <button class="fill-width btn-large btn-info" href="#" ng-click="tagPicture()"><i class="icon-tag icon-white"></i></button>
+        <div class="spacer">
+            <button class="fill-width btn-large btn-info btn-tag" href="#" ng-click="tagPicture()"><i class="icon-tag icon-white"></i></button>
         </div>
     </div>
 </div>

@@ -46,3 +46,8 @@ img {
     vertical-align: bottom;
     float: none;
 }    
+
+.btn-tag
+{
+    min-width:150px
+}
