@@ -36,11 +36,6 @@ html, body {
     margin-top: 10px; /* define margin as you see fit */
 }
 
-img {
-   height:80%;
-    width:50%;
-}
-
 .align-bottom{
     display: table-cell;
     vertical-align: bottom;
