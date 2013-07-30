@@ -81,3 +81,10 @@ html, body {
 .history-row-last-item{
     padding-bottom:30px;
 }
+
+.tag-button{
+    background-color:#036319;
+    width:100%;
+    height:40px;
+    
+}
