@@ -6,12 +6,16 @@ angular.module('App', [])
 
     $routeProvider
     .when('/', {
-        controller: TagCtrl,
-        templateUrl: 'partials/tag.html'
+        controller: HistoryCtrl,
+        templateUrl: 'partials/history.html'
     })
     .when('/history', {
         controller: HistoryCtrl,
         templateUrl: 'partials/history.html'
+    })
+    .when('/tag', {
+        controller: TagCtrl,
+        templateUrl: 'partials/tag.html'
     })
     .when('/account', {
         controller: AccountCtrl,

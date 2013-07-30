@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/potholelocator.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    
     
     <title>Pothole Tagger</title>
     
@@ -22,8 +22,8 @@
             <div class="navbar navbar-fixed-bottom">
             <div class="navbar-inner">
                 <ul class="nav row-fluid">
-                    <li class="span4"><a href="#/history"><i class="icon-list icon-white"></i> History</a></li>
-                    <li class="span4"><a href="#/"><i class="icon-road icon-white"></i> Tag</a></li>
+                    <li class="span4"><a href="#/history"><i class="icon-road icon-white"></i> History</a></li>
+                    <li class="span4"><a href="#/tag"><i class="icon-camera icon-white"></i> Tag</a></li>
                     <li class="span4"><a href="#/account"><i class="icon-user icon-white"></i> Account</a></li>
                   </ul>
             </div>
@@ -73,7 +73,24 @@
     <script type="text/javascript" src="js/routers.js"></script>
     <script type="text/javascript" src="js/controllers.js"></script>
     <script type="text/javascript">
+        document.addEventListener("deviceready",onDeviceReady,true);
+        
         app.initialize();
+        
+        // Wait for Cordova to connect with the device
+    //
+    
+
+    // Cordova is ready to be used!
+    //
+    function onDeviceReady() {
+        alert("onDeviceReady");
+        //$scope.isCameraReady = true;
+        $('#btnTakePic').removeClass('disabled');
+        $('#btnTakePic').removeAttr("disabled");
+        
+        
+    }
     </script>
 </body>
 </html>

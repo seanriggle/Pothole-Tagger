@@ -46,3 +46,38 @@ html, body {
 {
     min-width:150px
 }
+
+.span-history-price
+{
+    font-weight: bold;
+    color: green;
+    
+    font-size: 18px;
+}    
+
+.span-history-date
+{
+    font-size: 12px;
+}  
+
+.span-history-location
+{
+   font-size: 14px;
+     font-weight: bold;
+    
+}  
+
+.row .history-row {
+    margin:0;
+    padding-left:10px;
+}
+
+.history-img
+{
+    max-width:360px;
+    padding-left:30px;
+}
+
+.history-row-last-item{
+    padding-bottom:30px;
+}
